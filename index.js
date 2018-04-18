@@ -4,10 +4,8 @@ const uuid = require('uuid/v4');
 class Rpc extends events.EventEmitter {
     constructor(ipc, client) {
         super();
-        this.timeout = 30000;
         this.client = client || ipc;
         this.callbacks = {};
-        this.timeouts = {};
 
         ipc.on('cmd', (event, data) => {
             const [id, cmd, params] = data;
@@ -19,10 +17,8 @@ class Rpc extends events.EventEmitter {
         ipc.on('res', (event, data) => {
             const [id, params] = data;
             if (this.callbacks[id]) {
-                clearTimeout(this.timeouts[id]);
                 const callback = this.callbacks[id];
                 delete this.callbacks[id];
-                delete this.timeouts[id];
                 callback(null, params);
             }
         });
@@ -38,11 +34,6 @@ class Rpc extends events.EventEmitter {
 
         if (callback) {
             this.callbacks[id] = callback;
-            this.timeouts[id] = setTimeout(() => {
-                const callback = this.callbacks[id];
-                delete this.callbacks[id];
-                callback(new Error('timeout'));
-            }, this.timeout);
         }
 
         this.client.send('cmd', [id, cmd, params]);

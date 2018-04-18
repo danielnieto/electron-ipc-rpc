@@ -1,18 +1,9 @@
-# electron-ipc-rpc
+# electron-ipc-rpc-without-timeouts
 
-[![NPM version](https://badge.fury.io/js/electron-ipc-rpc.svg)](http://badge.fury.io/js/electron-ipc-rpc)
-[![Dependency Status](https://img.shields.io/gemnasium/hobbyquaker/electron-ipc-rpc.svg?maxAge=2592000)](https://gemnasium.com/github.com/hobbyquaker/electron-ipc-rpc)
-[![Build Status](https://travis-ci.org/hobbyquaker/electron-ipc-rpc.svg?branch=master)](https://travis-ci.org/hobbyquaker/electron-ipc-rpc)
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+[![NPM version](https://badge.fury.io/js/electron-ipc-rpc.svg)](http://badge.fury.io/js/electron-ipc-rpc-without-timeouts)
 [![License][mit-badge]][mit-url]
 
-> Simple and tiny RPC wrapper around electron ipc
-
-#### Why?
-
-I created this module because I wanted a more convenient drop-in replacement for socket.io when porting "classic" web 
-apps to electron.
-
+> Allows communication between Electron's IPC-Main and IPC-Renderer processes with support for callbacks
 
 ## Usage
 
@@ -46,14 +37,9 @@ rpc.send('method2', [], (err, res) => {
 });
 ```
 
-#### Timeout
-
-By default a method call times out after 30s without response. This can be changed by just overwriting `rpc.timeout` 
-with the desired millisecond value.
-
 ## License
 
-MIT © [Sebastian Raff](https://github.com/hobbyquaker)
+MIT © [Daniel Nieto](https://github.com/danielnieto) forked from [Sebastian Raff](https://github.com/hobbyquaker)
 
 [mit-badge]: https://img.shields.io/badge/License-MIT-blue.svg?style=flat
 [mit-url]: LICENSE

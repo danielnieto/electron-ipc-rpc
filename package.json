@@ -1,26 +1,30 @@
 {
-  "name": "electron-ipc-rpc",
-  "version": "1.1.0",
-  "description": "Simple and tiny RPC wrapper around electron ipc",
+  "name": "electron-ipc-rpc-without-timeouts",
+  "version": "1.0.0",
+  "description": "Allows communication between Electron's IPC-Main and IPC-Renderer processes with support for callbacks",
   "main": "index.js",
   "scripts": {
     "test": "camo-purge ; xo --space 4"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hobbyquaker/electron-ipc-rpc.git"
+    "url": "git+https://danielnieto/electron-ipc-rpc-without-timeouts.git"
   },
   "keywords": [
     "electron",
     "ipc",
-    "rpc"
+    "rpc",
+    "callbacks",
+    "ipc-main",
+    "ipc-renderer",
+    "communication"
   ],
-  "author": "Sebastian Raff <hq@ccu.io>",
+  "author": "Daniel Nieto <danielnieto89@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hobbyquaker/electron-ipc-rpc/issues"
+    "url": "https://github.com/danielnieto/electron-ipc-rpc-without-timeouts/issues"
   },
-  "homepage": "https://github.com/hobbyquaker/electron-ipc-rpc#readme",
+  "homepage": "https://github.com/danielnieto/electron-ipc-rpc-without-timeouts#readme",
   "devDependencies": {
     "camo-purge": "latest",
     "xo": "latest"
