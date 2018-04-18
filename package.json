@@ -6,7 +6,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://danielnieto/electron-ipc-rpc-without-timeouts.git"
+    "url": "git+https://github.com/danielnieto/electron-ipc-rpc-without-timeouts.git"
   },
   "keywords": [
     "electron",
