@@ -1,10 +1,9 @@
 {
   "name": "electron-ipc-rpc-without-timeouts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows communication between Electron's IPC-Main and IPC-Renderer processes with support for callbacks",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://danielnieto/electron-ipc-rpc-without-timeouts.git"
