@@ -4,7 +4,6 @@
   "description": "Allows communication between Electron's IPC-Main and IPC-Renderer processes with support for callbacks",
   "main": "index.js",
   "scripts": {
-    "test": "camo-purge ; xo --space 4"
   },
   "repository": {
     "type": "git",
@@ -25,10 +24,6 @@
     "url": "https://github.com/danielnieto/electron-ipc-rpc-without-timeouts/issues"
   },
   "homepage": "https://github.com/danielnieto/electron-ipc-rpc-without-timeouts#readme",
-  "devDependencies": {
-    "camo-purge": "latest",
-    "xo": "latest"
-  },
   "dependencies": {
     "uuid": "^3.1.0"
   }

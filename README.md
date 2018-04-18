@@ -1,8 +1,5 @@
 # electron-ipc-rpc-without-timeouts
 
-[![NPM version](https://badge.fury.io/js/electron-ipc-rpc.svg)](http://badge.fury.io/js/electron-ipc-rpc-without-timeouts)
-[![License][mit-badge]][mit-url]
-
 > Allows communication between Electron's IPC-Main and IPC-Renderer processes with support for callbacks
 
 ## Usage
